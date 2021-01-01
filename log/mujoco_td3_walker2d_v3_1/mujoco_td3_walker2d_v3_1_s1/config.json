@@ -1,0 +1,44 @@
+{
+    "ac_kwargs":	{},
+    "act_noise":	0.1,
+    "actor_critic":	"MLPActorCritic",
+    "batch_size":	100,
+    "env_fn":	"<function call_experiment.<locals>.thunk_plus.<locals>.<lambda> at 0x7f9d5fdd0620>",
+    "epochs":	500,
+    "exp_name":	"mujoco_td3_walker2d_v3_1",
+    "gamma":	0.99,
+    "logger":	{
+        "<spinup.utils.logx.EpochLogger object at 0x7f9d5fd1b278>":	{
+            "epoch_dict":	{},
+            "exp_name":	"mujoco_td3_walker2d_v3_1",
+            "first_row":	true,
+            "log_current_row":	{},
+            "log_headers":	[],
+            "output_dir":	"log/mujoco_td3_walker2d_v3_1/mujoco_td3_walker2d_v3_1_s1",
+            "output_file":	{
+                "<_io.TextIOWrapper name='log/mujoco_td3_walker2d_v3_1/mujoco_td3_walker2d_v3_1_s1/progress.txt' mode='w' encoding='ANSI_X3.4-1968'>":	{
+                    "mode":	"w"
+                }
+            }
+        }
+    },
+    "logger_kwargs":	{
+        "exp_name":	"mujoco_td3_walker2d_v3_1",
+        "output_dir":	"log/mujoco_td3_walker2d_v3_1/mujoco_td3_walker2d_v3_1_s1"
+    },
+    "max_ep_len":	1000,
+    "noise_clip":	0.5,
+    "num_test_episodes":	10,
+    "pi_lr":	0.001,
+    "policy_delay":	2,
+    "polyak":	0.995,
+    "q_lr":	0.001,
+    "replay_size":	1000000,
+    "save_freq":	1,
+    "seed":	1,
+    "start_steps":	10000,
+    "steps_per_epoch":	4000,
+    "target_noise":	0.2,
+    "update_after":	1000,
+    "update_every":	50
+}

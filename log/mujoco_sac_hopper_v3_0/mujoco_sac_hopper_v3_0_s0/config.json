@@ -1,0 +1,40 @@
+{
+    "ac_kwargs":	{},
+    "actor_critic":	"MLPActorCritic",
+    "alpha":	0.2,
+    "batch_size":	100,
+    "env_fn":	"<function call_experiment.<locals>.thunk_plus.<locals>.<lambda> at 0x7fbfd5412620>",
+    "epochs":	500,
+    "exp_name":	"mujoco_sac_hopper_v3_0",
+    "gamma":	0.99,
+    "logger":	{
+        "<spinup.utils.logx.EpochLogger object at 0x7fbfd535d240>":	{
+            "epoch_dict":	{},
+            "exp_name":	"mujoco_sac_hopper_v3_0",
+            "first_row":	true,
+            "log_current_row":	{},
+            "log_headers":	[],
+            "output_dir":	"log/mujoco_sac_hopper_v3_0/mujoco_sac_hopper_v3_0_s0",
+            "output_file":	{
+                "<_io.TextIOWrapper name='log/mujoco_sac_hopper_v3_0/mujoco_sac_hopper_v3_0_s0/progress.txt' mode='w' encoding='ANSI_X3.4-1968'>":	{
+                    "mode":	"w"
+                }
+            }
+        }
+    },
+    "logger_kwargs":	{
+        "exp_name":	"mujoco_sac_hopper_v3_0",
+        "output_dir":	"log/mujoco_sac_hopper_v3_0/mujoco_sac_hopper_v3_0_s0"
+    },
+    "lr":	0.001,
+    "max_ep_len":	1000,
+    "num_test_episodes":	10,
+    "polyak":	0.995,
+    "replay_size":	1000000,
+    "save_freq":	1,
+    "seed":	0,
+    "start_steps":	10000,
+    "steps_per_epoch":	4000,
+    "update_after":	1000,
+    "update_every":	50
+}

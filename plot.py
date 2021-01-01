@@ -12,8 +12,7 @@ if __name__ == "__main__":
     count = True
     smooth = 1
 
-    env_names = ["Ant-v3", "Hopper-v3", "Walker2d-v3", "Swimmer-v3"]
-    # env_names = ["HalfCheetah-v3"]
+    env_names = ["Ant-v3", "HalfCheetah-v3", "Hopper-v3", "Walker2d-v3", "Swimmer-v3"]
     algos = ["PPO", "DDPG", "SAC", "TD3"]
     seeds = [0, 1, 2, 3, 4]
 

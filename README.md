@@ -17,5 +17,5 @@ bash train.sh # this runs trainings and logs results in log folder
 
 * Generating demonstrations
 ``` bash
-# TODO
+python3 mujoco_data_generation.py # this produces demonstrations in folder expert_data
 ```

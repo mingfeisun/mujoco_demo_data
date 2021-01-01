@@ -7,10 +7,7 @@ from spinup.utils.test_policy import load_policy_and_env
 from expert_object import ExpertObject
 
 if __name__ == "__main__":
-    # env_names = ["Ant-v3", "Hopper-v3", "HalfCheetah-v3", "Walker2d-v3", "Swimmer-v3"]
-    # algos = ["PPO", "TRPO", "SAC", "TD3", "DDPG"]
-    # env_names = ["HalfCheetah-v3"]
-    env_names = ["Ant-v3", "Hopper-v3", "Walker2d-v3", "Swimmer-v3"]
+    env_names = ["Ant-v3", "HalfCheetah-v3", "Hopper-v3", "Walker2d-v3", "Swimmer-v3"]
     algos = ["PPO", "SAC", "TD3", "DDPG"]
     seeds = [0, 1, 2, 3, 4]
 

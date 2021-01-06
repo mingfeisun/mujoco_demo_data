@@ -1,0 +1,38 @@
+{
+    "ac_kwargs":	{},
+    "actor_critic":	"MLPActorCritic",
+    "clip_ratio":	0.2,
+    "env_fn":	"<function call_experiment.<locals>.thunk_plus.<locals>.<lambda> at 0x7f66ec29e620>",
+    "epochs":	500,
+    "exp_name":	"mujoco_ppo_swimmer_v2_3",
+    "gamma":	0.99,
+    "lam":	0.97,
+    "logger":	{
+        "<spinup.utils.logx.EpochLogger object at 0x7f66ec1e9278>":	{
+            "epoch_dict":	{},
+            "exp_name":	"mujoco_ppo_swimmer_v2_3",
+            "first_row":	true,
+            "log_current_row":	{},
+            "log_headers":	[],
+            "output_dir":	"log/mujoco_ppo_swimmer_v2_3/mujoco_ppo_swimmer_v2_3_s3",
+            "output_file":	{
+                "<_io.TextIOWrapper name='log/mujoco_ppo_swimmer_v2_3/mujoco_ppo_swimmer_v2_3_s3/progress.txt' mode='w' encoding='ANSI_X3.4-1968'>":	{
+                    "mode":	"w"
+                }
+            }
+        }
+    },
+    "logger_kwargs":	{
+        "exp_name":	"mujoco_ppo_swimmer_v2_3",
+        "output_dir":	"log/mujoco_ppo_swimmer_v2_3/mujoco_ppo_swimmer_v2_3_s3"
+    },
+    "max_ep_len":	1000,
+    "pi_lr":	0.0003,
+    "save_freq":	10,
+    "seed":	3,
+    "steps_per_epoch":	4000,
+    "target_kl":	0.01,
+    "train_pi_iters":	80,
+    "train_v_iters":	80,
+    "vf_lr":	0.001
+}

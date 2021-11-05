@@ -12,7 +12,7 @@ class ExpertObject:
         self.max_num_trajs = max_num_trajs
         self.env_id = env_id
         env = make(self.env_id)
-        self.act_limit = env.action_space.high[0]
+        # self.act_limit = env.action_space.high[0]
         self.picked_trajs = None
         self.trajs = []
         self.traj_rets = []
@@ -179,10 +179,10 @@ class ExpertObject:
 
         while is_collect:
             action = expert_fn(state)
-            if std:
-                action += np.random.randn(action.size) * std
-            if clip_action:
-                action = np.clip(action, -self.act_limit, self.act_limit)
+            # if std:
+            #     action += np.random.randn(action.size) * std
+            # if clip_action:
+            #     action = np.clip(action, -self.act_limit, self.act_limit)
             next_s, reward, done, info = env.step(action)
 
             states.append(state)

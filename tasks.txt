@@ -1,5 +1,0 @@
-0 Ant-v2         2000000
-1 HalfCheetah-v2 2000000
-2 Hopper-v2      2000000
-3 Swimmer-v2     2000000
-4 Walker2d-v2    2000000

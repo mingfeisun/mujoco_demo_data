@@ -14,7 +14,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     env_names = ["Ant-v2", "HalfCheetah-v2", "Hopper-v2", "Walker2d-v2", "Swimmer-v2"]
-    rounds = 10
+    rounds = 100
     dir_samples = "rnn_data"
     import time
 

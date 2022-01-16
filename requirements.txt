@@ -1,2 +1,3 @@
 gym==0.15.4
 mujoco-py==1.50.1.68
+stable-baselines==2.10.2

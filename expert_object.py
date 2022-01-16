@@ -174,20 +174,18 @@ class ExpertObject:
         rewards = []
         dones = []
         infos = []
-        state = env.reset() # reset env
+        obs = env.reset() # reset env
         min_length = 1 if not min_length else min_length
+        rnn_state = None
+        done = False
 
         while is_collect:
-            action = expert_fn(state)
-            # if std:
-            #     action += np.random.randn(action.size) * std
-            # if clip_action:
-            #     action = np.clip(action, -self.act_limit, self.act_limit)
-            next_s, reward, done, info = env.step(action)
+            action, rnn_state = expert_fn([obs], state=rnn_state, mask=[done])
+            next_obs, reward, done, info = env.step(action)
 
-            states.append(state)
+            states.append(obs)
             actions.append(action)
-            next_states.append(next_s)
+            next_states.append(next_obs)
             rewards.append(reward)
             dones.append(done)
             info.update({'std': std})
@@ -202,14 +200,14 @@ class ExpertObject:
                     rewards = []
                     dones = []
                     infos = []
-                    state = env.reset() # reset env
+                    obs = env.reset() # reset env
                     continue
                 else:
                     break
             t += 1
             is_collect = t <= max_t_per_traj if max_t_per_traj else True
 
-            state = next_s
+            obs = next_obs
 
         env.close()
 

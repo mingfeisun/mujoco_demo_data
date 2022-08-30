@@ -12,10 +12,10 @@ WORKDIR /home/mingfei
 
 RUN mkdir -p /home/mingfei/.mujoco 
 
-RUN wget https://www.roboti.us/download/mjpro150_linux.zip -O mujoco.zip \
+RUN wget http://www.roboti.us/download/mjpro150_linux.zip -O mujoco.zip \
     && unzip mujoco.zip -d /home/mingfei/.mujoco \
     && rm mujoco.zip
-RUN wget https://www.roboti.us/download/mujoco200_linux.zip -O mujoco.zip \
+RUN wget http://www.roboti.us/download/mujoco200_linux.zip -O mujoco.zip \
     && unzip mujoco.zip -d /home/mingfei/.mujoco \
     && rm mujoco.zip
 
